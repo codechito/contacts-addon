@@ -1,0 +1,17 @@
+[rabbit]
+uri = "amqp://fleyddhn:00xGK7yeJZocVeyDNk9KoNc6tLYb6I1D@mustang.rmq.cloudamqp.com/fleyddhn"
+admin_uri = "https://fleyddhn:00xGK7yeJZocVeyDNk9KoNc6tLYb6I1D@mustang.rmq.cloudamqp.com:443/api"
+
+[limiter]
+req_per_sec = 277
+
+[server]
+port = 8080
+
+[linkhits]
+queue = "responsyssend"
+exchange = "responsyssend"
+exchange_type = "topic"
+route_key = "responsyssend"
+
+
